@@ -1,0 +1,27 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:tns="http://cubetech.com/model" targetNamespace="http://cubetech.com/model"
+	elementFormDefault="qualified">
+
+	<xs:element name="receiverMO">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="sessionId" type="xs:string" />
+				<xs:element name="serviceId" type="xs:string" />
+				<xs:element name="sender" type="xs:string" />
+				<xs:element name="receivers" type="xs:string"/>
+				<xs:element name="content" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="MOResponse">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="status" type="xs:int" />
+				<xs:element name="message" type="xs:string" />
+				<xs:element name="errorCode" type="xs:string" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

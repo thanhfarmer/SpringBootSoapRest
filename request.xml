@@ -1,0 +1,18 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns="http://cubetech.com/model">
+	<soap:Header>
+		<authHeader xmlns="http://smsws.org/">
+         		<username>thanhnd</username>
+         		<password>thanhnd</password>
+      	</authHeader>
+	</soap:Header>
+	<soap:Body>
+		<receiverMO>
+			<sessionId>6996</sessionId>
+			<serviceId>FSHARE</serviceId>
+			<sender>931666777</sender>
+			<receivers>8778</receivers>
+			<content>FSHARE1234</content>
+		</receiverMO>
+	</soap:Body>
+</soap:Envelope>
